@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>:root{--bg:#FAF8F4;--bg2:#F3EFE7;--panel:#FFFDF9;--env:#F6F2EA;--env2:#EFE9DE;--ink:#1D1B18;--muted:#625C53;--line:#E2DBCF;--accent:#1F5A48;--accentbg:#E4EEE9;--warn:#A4521B;
 --btn:#1F5A48;--btnink:#fff;--navbg:rgba(250,248,244,.9);--sans:Inter,system-ui,sans-serif;--display:'Source Serif 4',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;--hw:600;--r:999px;--r2:6px}
-.brand{font-family:var(--display);font-size:20px;font-weight:600}
+
 .hero{padding:112px 0 80px}.hero h1{font-size:clamp(40px,5.4vw,68px);line-height:1.04;letter-spacing:-.02em;font-weight:600;max-width:980px}
 .hero .lead{max-width:680px;font-size:21px;margin-top:28px;color:var(--muted)}.ctas{display:flex;gap:14px;margin-top:40px;flex-wrap:wrap}
 .rule{border:0;border-top:1px solid var(--ink);margin:72px 0 0}
@@ -70,9 +70,13 @@ p{margin:0}.mono{font:500 12.5px/1.3 var(--mono);letter-spacing:.06em;text-trans
 .dg-a{stroke:var(--accent)} .dg-af{fill:var(--accent)}
 .dg-dashline{stroke-dasharray:6 6}
 .dg-dot{fill:var(--bg);stroke:var(--accent);stroke-width:2}
-.pv{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;background:#111;color:#fff;font:500 13px/1 system-ui,sans-serif;padding:10px 16px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.25)}.pv a{color:#fff;opacity:.6;text-decoration:none}.pv a[aria-current]{opacity:1;text-decoration:underline}.twocol .grid4{grid-template-columns:1fr 1fr}</style></head><body>
+.pv{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;background:#111;color:#fff;font:500 13px/1 system-ui,sans-serif;padding:10px 16px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.25)}.pv a{color:#fff;opacity:.6;text-decoration:none}.pv a[aria-current]{opacity:1;text-decoration:underline}.brand{display:flex!important;align-items:center!important;gap:10px!important;color:var(--ink);text-decoration:none}
+.logo-mark{flex:none;color:var(--ink)}.brand-name{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:17px;line-height:1;white-space:nowrap}
+.brand-name b{font-weight:700;letter-spacing:-.01em;color:var(--ink)}.brand-name i{width:1px;height:16px;background:var(--line)}.brand-name span{font-weight:500;color:var(--muted)}
+.foot-brand{display:flex;align-items:center;gap:10px}
+@media(max-width:480px){.brand-name i,.brand-name span{display:none}}.twocol .grid4{grid-template-columns:1fr 1fr}</style></head><body>
 <a id="top"></a>
-<header class="nav"><div class="wrap nav-in"><a class="brand" href="#top">Codex Healthcare</a>
+<header class="nav"><div class="wrap nav-in"><a class="brand" href="#top"><svg class="logo-mark" viewBox="0 0 34 32" width="30" height="28" aria-hidden="true"><defs><mask id="lmn"><rect width="34" height="32" fill="#fff"/><circle cx="15.4" cy="17.6" r="5.6" fill="#000"/><path d="M15.4,17.6 L22.6,6 L28.4,11.6 Z" fill="#000"/></mask></defs><circle cx="13" cy="19.8" r="11.4" fill="currentColor" mask="url(#lmn)"/><line x1="17.4" y1="15.6" x2="21.6" y2="11.4" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/><g transform="translate(27.2,5.6) rotate(45) scale(.82)" fill="currentColor"><path d="M0,-6.4 C2.6,-3.4 2.6,1.8 1.7,4 L-1.7,4 C-2.6,1.8 -2.6,-3.4 0,-6.4Z"/><path d="M-1.7,1.4 L-3.8,5.4 L-1.2,4.4Z M1.7,1.4 L3.8,5.4 L1.2,4.4Z"/></g></svg><span class="brand-name"><b>Codex Software</b><i></i><span>Healthcare</span></span></a>
 <nav class="nav-links"><a href="#how">How we work</a><a href="#safety">Data safety</a><a href="#work">Work</a><a href="#faq">Questions</a></nav><a class="btn btn-primary btn-sm" href="#contact">Book a call</a></div></header>
 <section class="hero"><div class="wrap">
 <p class="eyebrow">Forward-deployed engineers for UK health &amp; care</p>
@@ -102,7 +106,7 @@ p{margin:0}.mono{font:500 12.5px/1.3 var(--mono);letter-spacing:.06em;text-trans
 <p class="full fine">We use your details only to arrange this call.</p>
 </form></div></section>
 <footer class="foot"><div class="wrap">
-<div class="foot-top"><strong>Codex Software</strong><span>UK · Lisbon · Ponta Delgada · Warsaw</span>
+<div class="foot-top"><span class="foot-brand"><svg class="logo-mark" viewBox="0 0 34 32" width="24" height="23" aria-hidden="true"><defs><mask id="lmf"><rect width="34" height="32" fill="#fff"/><circle cx="15.4" cy="17.6" r="5.6" fill="#000"/><path d="M15.4,17.6 L22.6,6 L28.4,11.6 Z" fill="#000"/></mask></defs><circle cx="13" cy="19.8" r="11.4" fill="currentColor" mask="url(#lmf)"/><line x1="17.4" y1="15.6" x2="21.6" y2="11.4" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/><g transform="translate(27.2,5.6) rotate(45) scale(.82)" fill="currentColor"><path d="M0,-6.4 C2.6,-3.4 2.6,1.8 1.7,4 L-1.7,4 C-2.6,1.8 -2.6,-3.4 0,-6.4Z"/><path d="M-1.7,1.4 L-3.8,5.4 L-1.2,4.4Z M1.7,1.4 L3.8,5.4 L1.2,4.4Z"/></g></svg><strong>Codex Software</strong></span><span>UK · Lisbon · Ponta Delgada · Warsaw</span>
 <nav><a href="https://codex-soft.com">codex-soft.com</a><a href="https://ai.audit-angel.co.uk">Audit Angel AI</a><a href="#">Privacy</a></nav></div>
 <p>Codex Software Solutions Ltd is a company registered in England and Wales. Registered number: 09712933. VAT reg no: 266 0325 17. Registered office: Oakley House, Tetbury Road, Cirencester, Gloucestershire, GL7 1US.</p></div></footer>
 <div class="pv">Preview · <a href="/v1">Version 1</a> · <a href="/v2">Version 2</a> · <a href="/v3" aria-current="page">Version 3</a></div>
