@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codex Healthcare Engineering — Forward-deployed engineers for UK health & care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0F14}
+a{color:#C6F36B}a:hover{color:#E2FFA8}
+.v{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.4;font-weight:500;color:#3B2200;background:#F5C67A;border-radius:4px;padding:1px 6px;vertical-align:middle}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#C6F36B;margin:0}
+.h2{font-size:42px;line-height:1.12;font-weight:700;letter-spacing:-.02em;margin:0;color:#F2F5F8}
+.lead{font-size:18px;line-height:1.6;color:#A9B3BF;margin:0}
+.card{background:#121821;border:1px solid #232C38;border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:12px}
+.card h3{margin:0;font-size:20px;line-height:1.3;color:#F2F5F8;font-weight:700}
+.card p{margin:0;font-size:16px;line-height:1.6;color:#A9B3BF}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none}
+.btn-p{background:#C6F36B;color:#0B0F14}.btn-p:hover{background:#DBFF96;color:#0B0F14}
+.btn-s{color:#F2F5F8;border:1px solid #3A4656}.btn-s:hover{color:#FFFFFF;border-color:#A9B3BF}
+.mono{font-family:'JetBrains Mono',monospace}
+.tag{font-family:'JetBrains Mono',monospace;font-size:12px;color:#A9B3BF;border:1px solid #2E3846;border-radius:999px;padding:3px 10px}
+.case{background:#121821;border:1px solid #232C38;border-radius:14px;padding:32px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.case h4{margin:0 0 8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#7F8B99;font-weight:500}
+.case p{margin:0;font-size:16px;line-height:1.6;color:#C9D1DA}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:14px;font-weight:600;color:#F2F5F8}
+.field input,.field select,.field textarea{min-height:46px;border:1px solid #3A4656;border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:#0B0F14;color:#F2F5F8;box-sizing:border-box}
+@media (max-width:860px){.case{grid-template-columns:1fr}.h2{font-size:32px}}
+</style>
+<style>html{scroll-behavior:smooth}*,*::before,*::after{box-sizing:border-box}</style>
+</head>
+<body>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #F2F5F8; background: #0B0F14; min-height: 100vh">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #1C2430">
+<div style="max-width: 1200px; margin: 0 auto; padding: 18px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F2F5F8">
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M9 6L3 13l6 7M17 6l6 7-6 7" stroke="#C6F36B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span style="font-weight: 800; font-size: 18px; letter-spacing: -.01em">Codex <span style="font-weight: 500; color: #A9B3BF">Healthcare Engineering</span></span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 15px">
+<a href="#services" style="color: #A9B3BF; text-decoration: none">Services</a>
+<a href="#cases" style="color: #A9B3BF; text-decoration: none">What we've built</a>
+<a href="#how" style="color: #A9B3BF; text-decoration: none">How we work</a>
+<a href="#questions" style="color: #A9B3BF; text-decoration: none">Questions</a>
+<a href="#book" class="btn btn-p" style="min-height: 44px; font-size: 15px">Book a scoping call</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 80px; display: flex; flex-direction: column; gap: 28px">
+<p class="eyebrow">Forward-deployed engineers · UK healthcare</p>
+<h1 style="margin: 0; font-size: 64px; line-height: 1.04; letter-spacing: -.03em; font-weight: 800; max-width: 1040px">Find what's quietly slowing your clinicians down. <span style="color: #C6F36B">Then fix it, with or without AI.</span></h1>
+<p class="lead" style="font-size: 20px; max-width: 800px">Our engineers embed with your clinical and IT teams, map how your systems and data really work, and surface the problems nobody has had time to see: manual workarounds, risky data flows, tools you pay for twice. Then they fix the ones worth fixing, through optimisation, integration or AI, and take them live safely.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a href="#book" class="btn btn-p">Book a Systems &amp; AI Review</a>
+<a href="#finds" class="btn btn-s">What we usually find ↓</a>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px">
+<span class="tag">Claude Partner Network</span><span class="tag">Built for UK health &amp; care</span><span class="tag">UK · Lisbon · Warsaw</span>
+<span class="v">VERIFY partner status</span>
+</div>
+</section>
+
+<!-- COMPLIANCE BLOCK -->
+<section aria-label="Certifications" style="max-width: 1200px; margin: 0 auto; padding: 0 32px 72px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+<div class="card" style="flex-direction: row; align-items: center; gap: 18px; padding: 24px">
+<svg width="44" height="44" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink: 0"><path d="M8 1.5l5.5 2v4c0 3.4-2.3 5.9-5.5 7-3.2-1.1-5.5-3.6-5.5-7v-4l5.5-2z" stroke="#C6F36B" stroke-width="1" stroke-linejoin="round"></path><path d="M5.5 8l1.8 1.8L10.8 6.3" stroke="#C6F36B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 20px; color: #F2F5F8">NHS DSPT: Standards met</strong><span style="font-size: 15px; line-height: 1.5; color: #A9B3BF">Data Security and Protection Toolkit for handling NHS patient data</span><a href="https://www.dsptoolkit.nhs.uk/OrganisationSearch/D6R2P" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 600">View assessment (D6R2P) →</a></div>
+</div>
+<div class="card" style="flex-direction: row; align-items: center; gap: 18px; padding: 24px">
+<svg width="44" height="44" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink: 0"><path d="M8 1.5l5.5 2v4c0 3.4-2.3 5.9-5.5 7-3.2-1.1-5.5-3.6-5.5-7v-4l5.5-2z" stroke="#C6F36B" stroke-width="1" stroke-linejoin="round"></path><path d="M5.5 8l1.8 1.8L10.8 6.3" stroke="#C6F36B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 20px; color: #F2F5F8">ISO/IEC 27001</strong><span style="font-size: 15px; line-height: 1.5; color: #A9B3BF">Information security management, certified by LRQA</span><a href="https://codex-soft.com/00049235-ICT-ENGUS-UKAS-06-2025.pdf" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 600">View certificate →</a></div>
+</div>
+<div class="card" style="flex-direction: row; align-items: center; gap: 18px; padding: 24px">
+<svg width="44" height="44" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="flex-shrink: 0"><path d="M8 1.5l5.5 2v4c0 3.4-2.3 5.9-5.5 7-3.2-1.1-5.5-3.6-5.5-7v-4l5.5-2z" stroke="#C6F36B" stroke-width="1" stroke-linejoin="round"></path><path d="M5.5 8l1.8 1.8L10.8 6.3" stroke="#C6F36B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 20px; color: #F2F5F8">Cyber Essentials</strong><span style="font-size: 15px; line-height: 1.5; color: #A9B3BF">UK government-backed certification against common cyber threats</span><a href="https://registry.blockmarktech.com/certificates/d2d81999-0b20-441c-adf3-a8e84a137bad/" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 600">Verify certificate →</a></div>
+</div>
+</div>
+<p style="margin: 14px 0 0; font-size: 14px; color: #A9B3BF">Certificate details and scope are available on request.</p>
+</section>
+
+<!-- WHAT IS AN FDE -->
+<section style="border-top: 1px solid #1C2430; border-bottom: 1px solid #1C2430; background: #0F141B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px; display: flex; flex-wrap: wrap; gap: 48px; align-items: start">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<p class="eyebrow">The model</p>
+<h2 class="h2" style="font-size: 34px">What's a forward-deployed engineer?</h2>
+</div>
+<div style="flex: 999 1 560px; min-width: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span class="mono" style="color: #7F8B99; font-size: 13px">Looks before it builds</span><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D1DA">Most teams don't need another tool. They need someone to look at the whole picture, find where time, money and risk leak, and say plainly what to fix first.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><span class="mono" style="color: #7F8B99; font-size: 13px">Not an agency</span><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D1DA">An agency takes a spec, builds it somewhere else and hands it over. An FDE sits with your team, on-site or embedded, and learns how your clinicians actually work.</p></div>
+<div style="display: flex; flex-direction: column; gap: 8px"><span class="mono" style="color: #7F8B99; font-size: 13px">Owns the outcome</span><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D1DA">Data, integration, AI, the IG paperwork and the handover belong to one small team, so nothing falls between vendors.</p></div>
+</div>
+</div>
+</section>
+
+<!-- CONTEXT / TRIGGER -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 96px 32px 40px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 780px">
+<p class="eyebrow">When teams call us</p>
+<h2 class="h2">Something feels slow, expensive or risky. Nobody has time to find out why.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div class="card"><h3>The board wants an AI plan</h3><p>Everyone agrees AI matters. Nobody can say which of your processes it would actually improve, or what it would take.</p></div>
+<div class="card"><h3>Software costs keep rising</h3><p>Renewals arrive every quarter. You suspect overlap and unused licences, but no one has mapped what you really use.</p></div>
+<div class="card"><h3>Clinicians complain about admin</h3><p>Double entry, letters filed by hand, results chased by phone. Each fix seems small, so none gets done.</p></div>
+<div class="card"><h3>Nobody can get the data out</h3><p>The board loves the AI idea, but no one on the team can extract clean records from EMIS, SystmOne or Adastra.</p></div>
+<div class="card"><h3>The pilot is stuck in IG</h3><p>DPIA, DTAC and DCB0129 have held up a pilot for six months, and nobody owns the paperwork.</p></div>
+<div class="card"><h3>The vendor roadmap is 18 months away</h3><p>The problem is costing you clinician hours and risk today. Waiting for a feature request isn't a plan.</p></div>
+<div class="card"><h3>The platform you bought sits unused</h3><p>Licences are paid, but nobody integrated it into the way clinicians actually work.</p></div>
+</div>
+</section>
+
+<!-- VALUE BY CRITERIA -->
+<section style="max-width: 1200px; margin: 0 auto; padding: 56px 32px 96px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 780px">
+<p class="eyebrow">What you get</p>
+<h2 class="h2">Concrete commitments, not "digital transformation"</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1px; background: #232C38; border: 1px solid #232C38; border-radius: 14px; overflow: hidden">
+<div style="background: #121821; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 40px; font-weight: 800; color: #C6F36B; letter-spacing: -.02em">2 weeks</div><p style="margin: 0; color: #C9D1DA; line-height: 1.55">from kickoff to a map of your systems and a ranked list of problems and AI opportunities, each with cost and effort <span class="v">VERIFY</span></p></div>
+<div style="background: #121821; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 40px; font-weight: 800; color: #C6F36B; letter-spacing: -.02em">6 weeks</div><p style="margin: 0; color: #C9D1DA; line-height: 1.55">to a first working version running on your real (de-identified) data <span class="v">VERIFY</span></p></div>
+<div style="background: #121821; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 40px; font-weight: 800; color: #C6F36B; letter-spacing: -.02em">Day 1</div><p style="margin: 0; color: #C9D1DA; line-height: 1.55">IG and clinical safety documents start alongside the code, not after it</p></div>
+<div style="background: #121821; padding: 28px; display: flex; flex-direction: column; gap: 10px"><div style="font-size: 40px; font-weight: 800; color: #C6F36B; letter-spacing: -.02em">100%</div><p style="margin: 0; color: #C9D1DA; line-height: 1.55">of the code, pipelines and documentation are yours. No lock-in.</p></div>
+</div>
+</section>
+
+<!-- WHAT WE FIND (taste of value) -->
+<section id="finds" style="background: #0F141B; border-top: 1px solid #1C2430; border-bottom: 1px solid #1C2430">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+<p class="eyebrow">What we usually find in the first two weeks</p>
+<h2 class="h2">The expensive problems are rarely the ones on the roadmap</h2>
+<p class="lead">Typical findings from reviews of NHS and care-sector environments. Yours will differ, which is the point of looking. <span class="v">VERIFY: replace with real anonymised findings</span></p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px">
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Time</span><h3>The same data typed in three places</h3><p>Referrals keyed into the clinical system, a spreadsheet and a booking tool by different people.</p></div>
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Risk</span><h3>A critical export runs from one laptop</h3><p>A nightly CSV that feeds reporting depends on one person's machine and password.</p></div>
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Money</span><h3>Two tools doing one job</h3><p>Overlapping licences bought by different teams, or seats nobody has logged into for months.</p></div>
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Compliance</span><h3>Data flows with no DPIA</h3><p>A supplier integration added years ago that never went through IG review. Your next DSPT submission will ask.</p></div>
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Clinician time</span><h3>Letters and results handled by hand</h3><p>Hospital letters read, coded and routed manually: often the single best place to start with AI.</p></div>
+<div class="card"><span class="mono" style="font-size: 12px; color: #F5C67A">Resilience</span><h3>A server past end of support</h3><p>An on-premise system nobody wants to touch, with no tested restore and no migration plan.</p></div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px">
+<p class="eyebrow">What our engineers do</p>
+<h2 class="h2">Diagnose, fix, and keep it running</h2>
+<p class="lead">Every engagement starts with the review. What comes next depends on what we find, not on what we'd like to sell.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span class="mono" style="font-size: 13px; color: #C6F36B">01 · Diagnose</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<div class="card"><h3>Systems &amp; data map</h3><p>Every system, integration and data flow on one page, including the spreadsheets and workarounds nobody documented.</p></div>
+<div class="card"><h3>Hidden cost review</h3><p>Unused licences, overlapping tools and manual work, priced in pounds and clinician hours.</p></div>
+<div class="card"><h3>IG &amp; cyber risk check</h3><p>Flows without a DPIA, unsupported systems and DSPT gaps, found before an auditor or an incident does.</p></div>
+<div class="card"><h3>AI opportunity map</h3><p>Your processes ranked by value and feasibility, with an honest list of where AI isn't worth it.</p></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span class="mono" style="font-size: 13px; color: #C6F36B">02 · Fix</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<div class="card"><h3>Integration &amp; automation</h3><p>Replace manual exports and double entry with APIs, FHIR, IM1 or care-system connectors.</p></div>
+<div class="card"><h3>AI in clinical workflows</h3><p>Document and letter processing, transcription, triage support and audit, with identifiers removed on your side.</p></div>
+<div class="card"><h3>One source for reporting</h3><p>A single data layer for board, ICB and CQC reporting instead of ten spreadsheets.</p></div>
+<div class="card"><h3>Legacy modernisation</h3><p>Move off end-of-support systems to supported, secure cloud or hosted platforms, without losing history.</p></div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span class="mono" style="font-size: 13px; color: #C6F36B">03 · Run</span>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+<div class="card"><h3>Vendor &amp; procurement support</h3><p>DTAC checks on AI suppliers, specifications you can tender on, and contracts that avoid lock-in.</p></div>
+<div class="card"><h3>Run &amp; improve</h3><p>We operate and tune what we built, or train your team to take it over.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CASES -->
+<section id="cases" style="background: #0F141B; border-top: 1px solid #1C2430; border-bottom: 1px solid #1C2430">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 820px; margin-bottom: 12px">
+<p class="eyebrow">What we've built</p>
+<h2 class="h2">Client builds and our own clinical products</h2>
+<p class="lead">We build for UK health organisations, and we run our own certified clinical products. Every lesson below came from shipping into real health and care settings.</p>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">Patiento: a patient-held health record for chronic and palliative care</h3>
+<span class="tag" style="color: #C6F36B; border-color: #4A5A2A">Client project · Patiento Innovations, Derby</span>
+</div>
+<div><h4>The problem</h4><p>People with chronic illness, palliative care needs and their carers retell their medical history at every appointment, across NHS, private and specialist services.</p></div>
+<div><h4>What we built</h4><p>A mobile app that keeps diagnoses, medications, allergies and key history in one place, surfaces what matters before an appointment, and lets the patient control consent and sharing. <span class="v">VERIFY Codex scope</span></p></div>
+<div><h4>The result</h4><p>In pilot with patients and carers. Cyber Essentials certified, and winner of the SEHTA Healthcare Business Awards 2026, Primary &amp; Social Care Partnership. <a href="https://www.patiento.io/">patiento.io →</a> <span class="v">VERIFY permission to feature</span></p></div>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">Audit Angel: clinical audit, rebuilt around AI</h3>
+<span class="tag" style="color: #C6F36B; border-color: #4A5A2A">Our own product</span>
+</div>
+<div><h4>The problem</h4><p>Clinical leads at an NHS urgent care provider were auditing a small sample of consultations by hand, months after the fact.</p></div>
+<div><h4>What we built</h4><p>A clinical audit platform that imports Adastra and EMIS records, scores them against RCGP and NICE-aligned templates, and puts every AI judgement in front of a clinician.</p></div>
+<div><h4>The result</h4><p>95% agreement with clinician review <span class="v">VERIFY</span>. Certified ourselves to ISO 27001, DSPT and Cyber Essentials. Now extended into a CQC readiness toolkit. <a href="https://ai.audit-angel.co.uk">See Audit Angel AI →</a></p></div>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">Shift Partner: [one-line description]</h3>
+<span class="v">PLACEHOLDER: fill in case</span>
+</div>
+<div><h4>The problem</h4><p>[What was broken for the healthcare client, in their words. E.g. rota gaps filled by phone and spreadsheets.]</p></div>
+<div><h4>What we built</h4><p>[The system, the integrations, who uses it.]</p></div>
+<div><h4>The result</h4><p>[One measurable outcome: hours saved, shifts filled, cost per shift.]</p></div>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">COVID-19 app: [one-line description]</h3>
+<span class="v">PLACEHOLDER: fill in case</span>
+</div>
+<div><h4>The problem</h4><p>[The pandemic-era need and who had it.]</p></div>
+<div><h4>What we built</h4><p>[Scope, timeline, under what pressure.]</p></div>
+<div><h4>The result</h4><p>[Users, time to launch, outcome.]</p></div>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">Voice AI for an emergency contact centre</h3>
+<span class="v">PLACEHOLDER: confirm scope + naming</span>
+</div>
+<div><h4>The problem</h4><p>[Call handlers re-typing what callers say while also triaging. Prototype built for a tender.]</p></div>
+<div><h4>What we built</h4><p>[Live transcription and AI assist layered over the existing telephony, using speech-to-text and Amazon Connect experience.]</p></div>
+<div><h4>The result</h4><p>[Prototype status, handling time or accuracy figure.]</p></div>
+</div>
+
+<div class="case">
+<div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center">
+<h3 style="margin: 0; font-size: 26px; font-weight: 800">AI inside our own operations</h3>
+<span class="v">PLACEHOLDER: add metric</span>
+</div>
+<div><h4>The problem</h4><p>Finding and answering public-sector tenders and keeping compliance evidence current took senior people's time every week.</p></div>
+<div><h4>What we built</h4><p>An internal "bid room" that finds, scores and drafts tender responses with Claude, plus tracking for our ISO 27001, DSPT and Cyber Essentials evidence.</p></div>
+<div><h4>The result</h4><p>[Hours saved per tender, tenders reviewed per week.]</p></div>
+</div>
+
+<div class="card" style="flex-direction: row; flex-wrap: wrap; align-items: center; gap: 24px; justify-content: space-between">
+<div style="flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="mono" style="font-size: 13px; color: #7F8B99">Integration track record, outside healthcare</span>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D1DA">We've delivered around 28 production integrations on HP's Site Flow platform, which we still develop under contract. Repeatable integration is a discipline, and we bring it to clinical systems. <span class="v">VERIFY permission to name HP</span></p>
+</div>
+<div style="flex: 1 1 160px; font-size: 48px; font-weight: 800; color: #C6F36B; letter-spacing: -.02em">~28</div>
+</div>
+</div>
+</section>
+
+<!-- HOW WE WORK -->
+<section id="how" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 780px">
+<p class="eyebrow">How we work</p>
+<h2 class="h2">One problem, one small team, three phases</h2>
+<p class="lead">Durations below are typical. <span class="v">VERIFY</span></p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px">
+<div class="card"><span class="mono" style="color: #C6F36B; font-size: 14px">Weeks 1–2 · Systems &amp; AI Review</span><h3>Look at everything, rank what matters</h3><p>We shadow clinicians and admin staff, map your systems and data flows, and hand you a ranked list of problems and AI opportunities with cost, risk and effort. Fixed price. <span class="v">PLACEHOLDER: price</span></p></div>
+<div class="card"><span class="mono" style="color: #C6F36B; font-size: 14px">Weeks 3–6 · Build on real data</span><h3>Working software, not wireframes</h3><p>Connectors to EMIS and SystmOne exports, Adastra, FHIR, HL7 or care-system APIs. AI with identifiers removed inside your environment. Run in shadow mode next to current practice.</p></div>
+<div class="card"><span class="mono" style="color: #C6F36B; font-size: 14px">Weeks 7–8 · Assure &amp; hand over</span><h3>Signed off, trained, live</h3><p>Clinical safety case and hazard log, DTAC evidence, training for your team, go-live. Then we keep running it, or your team takes over.</p></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<div style="border: 1px solid #232C38; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 16px">Clinical data connectors</strong><span style="color: #A9B3BF; font-size: 15px; line-height: 1.5">EMIS, SystmOne, Adastra, Nourish, FHIR, HL7, SFTP</span></div>
+<div style="border: 1px solid #232C38; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 16px">Privacy-first AI</strong><span style="color: #A9B3BF; font-size: 15px; line-height: 1.5">De-identification on your side, zero-retention models</span></div>
+<div style="border: 1px solid #232C38; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 16px">Assurance documents</strong><span style="color: #A9B3BF; font-size: 15px; line-height: 1.5">DPIA, DTAC, DCB0129 hazard log, safety case</span></div>
+<div style="border: 1px solid #232C38; border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 16px">Clinician-facing tools</strong><span style="color: #A9B3BF; font-size: 15px; line-height: 1.5">Dashboards, task lists, voice and transcription</span></div>
+</div>
+</section>
+
+<!-- WHY THE USUAL OPTIONS FAIL -->
+<section style="background: #0F141B; border-top: 1px solid #1C2430; border-bottom: 1px solid #1C2430">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 780px">
+<p class="eyebrow">Why the usual options fall short</p>
+<h2 class="h2">You've probably tried one of these</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+<div class="card"><h3>A big consultancy</h3><p>A discovery report and a roadmap, then a second contract to build it. Months before anything touches real data.</p></div>
+<div class="card"><h3>A generic dev agency</h3><p>Good code, but they learn DSPT, DCB0129 and EMIS extracts on your budget.</p></div>
+<div class="card"><h3>An off-the-shelf platform</h3><p>Built for the average trust. Your local rules and workflows become "phase 2" forever.</p></div>
+<div class="card"><h3>Doing it in-house</h3><p>Your IT team is already at capacity keeping the lights on.</p></div>
+</div>
+</div>
+</section>
+
+<!-- FEAR REDUCTION -->
+<section id="questions" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 780px">
+<p class="eyebrow">Fair questions</p>
+<h2 class="h2">What people usually ask us before they sign</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px">
+<div class="card"><h3>"Will a team outside the NHS understand how we work?"</h3><p>We're a UK company that has built clinical products for NHS providers and passed DSPT ourselves. Engineers spend the first two weeks with your clinicians, not in a ticket queue.</p></div>
+<div class="card"><h3>"Will we be locked in?"</h3><p>You own the code, the pipelines and the documentation. Handover is part of every plan, whether or not you keep us on.</p></div>
+<div class="card"><h3>"Is AI safe to use with clinical data?"</h3><p>Identifiers are removed inside your environment, models run under zero-retention terms, and a clinician stays in the loop. If AI is the wrong tool for your problem, we'll say so in discovery.</p></div>
+<div class="card"><h3>"What if the budget runs away?"</h3><p>Discovery is fixed price. The build is priced per phase, and you can stop at the end of any phase with working software in hand.</p></div>
+<div class="card"><h3>"Where is our data processed?"</h3><p>In your environment or UK-hosted infrastructure, under a data processing agreement where you remain controller. <span class="v">VERIFY hosting options</span></p></div>
+<div class="card"><h3>"How big is the team?"</h3><p>Usually two or three engineers plus a delivery lead, drawn from our team across the UK, Lisbon and Warsaw. <span class="v">VERIFY</span></p></div>
+</div>
+</section>
+
+<!-- STATE B -->
+<section style="border-top: 1px solid #1C2430; border-bottom: 1px solid #1C2430; background: #0F141B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-direction: column; gap: 20px; max-width: 1200px">
+<p class="eyebrow">Three months from now</p>
+<h2 class="h2" style="max-width: 900px">The tool is live. Clinicians opened it on Monday without being asked. Your Caldicott Guardian signed it off, and the board has the first month of results.</h2>
+<p class="lead" style="max-width: 780px">And you own all of it: the code, the data pipeline and the safety case. The next problem goes faster because the plumbing is already in place.</p>
+</div>
+</section>
+
+<!-- BOOK -->
+<section id="book" style="max-width: 1200px; margin: 0 auto; padding: 96px 32px; display: flex; flex-wrap: wrap; gap: 56px">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p class="eyebrow">First step</p>
+<h2 class="h2">30 minutes with a lead engineer</h2>
+<p class="lead">Bring a specific problem, or just the feeling that things are slower and costlier than they should be. We'll tell you whether a Systems &amp; AI Review makes sense, what we'd look at and what you'd get. No sales deck.</p>
+<p style="margin: 0; font-size: 15px; color: #A9B3BF">Just need clinical audit? <a href="https://ai.audit-angel.co.uk">Audit Angel AI does that out of the box →</a></p>
+</div>
+<form style="flex: 999 1 520px; min-width: 0; background: #121821; border: 1px solid #232C38; border-radius: 14px; padding: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px">
+<div class="field"><label for="cx-name">Name</label><input id="cx-name" type="text" autocomplete="name"></div>
+<div class="field"><label for="cx-email">Work email</label><input id="cx-email" type="email" autocomplete="email"></div>
+<div class="field"><label for="cx-org">Organisation</label><input id="cx-org" type="text" autocomplete="organization"></div>
+<div class="field"><label for="cx-sys">Main system</label><select id="cx-sys"><option>EMIS Web</option><option>SystmOne</option><option>Adastra</option><option>Care system (Nourish, Birdie…)</option><option>Bespoke / other</option></select></div>
+<div class="field" style="grid-column: 1 / -1"><label for="cx-prob">What feels slow, costly or risky right now? (optional)</label><textarea id="cx-prob" rows="3" style="resize: vertical"></textarea></div>
+<button type="button" class="btn btn-p" style="grid-column: 1 / -1; border: 0; cursor: pointer; font-family: inherit">Book a 30-minute call</button>
+<p style="grid-column: 1 / -1; margin: 0; font-size: 13px; color: #A9B3BF">We use your details only to arrange this call. <a href="#privacy">Privacy notice</a></p>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #1C2430">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 32px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; font-size: 14px; color: #A9B3BF">
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span style="color: #DDE3EA; font-weight: 600">Codex Software · UK · Lisbon · Ponta Delgada · Warsaw</span>
+<span style="font-size: 13px; line-height: 1.6; color: #A9B3BF">Codex Software Solutions Ltd is a company registered in England and Wales. Registered number: 09712933. VAT reg no: 266 0325 17. Registered office: Oakley House, Tetbury Road, Cirencester, Gloucestershire, GL7 1US.</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="https://codex-soft.com" style="color: #A9B3BF">codex-soft.com</a>
+<a href="https://ai.audit-angel.co.uk" style="color: #A9B3BF">Audit Angel AI</a>
+<a id="privacy" href="#privacy" style="color: #A9B3BF">Privacy</a>
+</div>
+</div>
+</footer>
+
+</div>
+</body>
+</html>
